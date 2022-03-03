@@ -6,6 +6,8 @@ services:
     image: node:lts
     restart: unless-stopped
     tty: true
+	ports:
+	  - 3000:3000
     working_dir: /opt/app
     volumes:
       - ./src:/opt/app
