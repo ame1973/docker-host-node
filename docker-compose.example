@@ -6,10 +6,10 @@ services:
     image: node:lts
     restart: unless-stopped
     tty: true
-	ports:
-	  - 3000:3000
+    ports:
+      - 3000:3000
     working_dir: /opt/app
-	command: bash -c "yarn start"
+    command: bash -c "yarn start"
     volumes:
       - ./src:/opt/app
     networks:
